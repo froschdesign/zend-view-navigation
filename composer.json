@@ -1,0 +1,70 @@
+{
+    "name": "zendframework/zend-view-navigation",
+    "description": "",
+    "homepage": "https://docs.zendframework.com/zend-view-navigation/",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "zend",
+        "zendframework",
+        "zend-view-navigation",
+        "zend-view"
+    ],
+    "support": {
+        "docs": "https://docs.zendframework.com/zend-navigation/",
+        "issues": "https://github.com/zendframework/zend-view-navigation/issues",
+        "source": "https://github.com/zendframework/zend-view-navigation",
+        "rss": "https://github.com/zendframework/zend-view-navigation/releases.atom",
+        "slack": "https://zendframework-slack.herokuapp.com",
+        "forum": "https://discourse.zendframework.com/c/questions/expressive"
+    },
+    "require": {
+        "php": "^7.0",
+        "zendframework/zend-navigation": "^2.8.2",
+        "zendframework/zend-permissions-acl": "^2.6",
+        "zendframework/zend-view": "^2.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4.1",
+        "zendframework/zend-config": "^3.1",
+        "zendframework/zend-coding-standard": "~1.0.0",
+        "zendframework/zend-i18n": "^2.7.4",
+        "zendframework/zend-mvc": "^3.1",
+        "zendframework/zend-servicemanager": "^3.3",
+        "zendframework/zend-uri": "^2.5.2",
+        "zendframework/zend-validator": "^2.9.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zend\\View\\Navigation\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ZendTest\\View\\Navigation\\": "test/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+          "php": "7.1.0"
+        },
+        "optimize-autoloader": true,
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev",
+            "dev-develop": "1.1-dev"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@test"
+        ],
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
+        "upload-coverage": "coveralls -v"
+    }
+}
