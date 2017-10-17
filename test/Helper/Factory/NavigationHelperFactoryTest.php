@@ -5,12 +5,12 @@
  * @license   https://github.com/zendframework/zend-view-navigation/blob/master/LICENSE.md New BSD License
  */
 
-namespace Helper\Service;
+namespace Helper\Factory;
 
 use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\ServiceManager;
 use Zend\View\Navigation\Helper\Navigation as NavigationHelper;
-use Zend\View\Navigation\Helper\Service\NavigationHelperFactory;
+use Zend\View\Navigation\Helper\Factory\NavigationHelperFactory;
 use PHPUnit\Framework\TestCase;
 
 class NavigationHelperFactoryTest extends TestCase

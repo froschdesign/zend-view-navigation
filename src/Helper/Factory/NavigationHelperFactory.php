@@ -5,7 +5,7 @@
  * @license   https://github.com/zendframework/zend-view-navigation/blob/master/LICENSE.md New BSD License
  */
 
-namespace Zend\View\Navigation\Helper\Service;
+namespace Zend\View\Navigation\Helper\Factory;
 
 use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\Factory\FactoryInterface;
